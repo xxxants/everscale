@@ -59,6 +59,6 @@ func (s *Server) ConfigureStore() {
 func (s *Server) ConfigureRouter() {
 	s.Router.GET("/ping", s.Ping())
 	s.Router.GET("/nft/list", s.NftList())
-	s.Router.GET("/nft/genome", s.GetGenome())
+	s.Router.GET("/nft/info", s.GetNftInfo())
 	s.Router.POST("nft/new", s.newGenome())
 }
