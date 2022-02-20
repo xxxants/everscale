@@ -12,7 +12,7 @@ import (
 )
 
 func runServer() {
-	server := server.NewServer("localhost", "5000")
+	server := server.NewServer("0.0.0.0", "5000")
 	if err := server.Start(); err != nil {
 		server.Logger.Fatalf("%v", err)
 	}
